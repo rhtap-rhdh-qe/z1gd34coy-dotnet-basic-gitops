@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: z1gd34coy-dotnet-basic
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: z1gd34coy-dotnet-basic 
+  name: z1gd34coy-dotnet-basic
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: z1gd34coy-dotnet-basic 
